@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda</title>
+        <script type="text/javascript" src="MiArchivo.js"></script>
+        <style>
+            .elemento{
+                width: 350px;
+                height: 450px;
+                background: #ffffff;
+                border: 2px solid #2b2b2b;
+                margin: 20px;
+                float: left;
+            }
+            body{
+                background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/07/origen-nombres-informatica-nunca-hubieras-imaginado_2.jpg);
+                background-size: 200%;
+            }
+            .bloque{
+                margin-left: 10px;
+                float: left;
+            }
+            .agregar{
+                border-radius: 10px;
+                background-color: cornflowerblue;
+                font-family: Arial, Helvetica, sans-serif;
+                border: solid 2px black;
+            }
+            #contenedorTabla{
+                margin: 350px;
+                width: 600px;
+                margin-top: 30px;
+            }
+            table{
+                width: 100%;
+                background-color:white;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            th, td{
+                padding: 10px;
+
+            }
+            thead{
+                background-color:crimson;
+                border-bottom: solid 5px red;
+            }
+            .IMG{
+                border: solid 2px orange;
+                border-radius: 15px;
+                box-shadow: 0px 23px 5px -1px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Lista de productos disponibles</h3>
+        <div class="elemento">
+            <img src="Img/placa.png" width="300px" border-radius="10px">
+            <h5>Placa madre AMD x570</h5>
+            <h5 class="Placamadre">Q1,100</h5>
+            <button class="agregar" id="Placamadre">Agregar al carrito</button>
+        </div>
+        <div class="elemento">
+            <img src="Img/g203.png" width="300px" border-radius="10px">
+            <h5>Mouse gamer Logitech G203</h5>
+            <h5 class="Mouse">Q250</h5>
+            <button class="agregar" id="Mouse">Agregar al carrito</button>
+        </div>
+        <div class="elemento">
+            <img src="Img/rtx 3070.png" width="300px" border-radius="10px">
+            <h5>Tarjeta de video RTX 3070</h5>
+            <h5 class="Tarjetavideo">Q3500</h5>
+            <button class="agregar" id="Tarjetavideo">Agregar al carrito</button>
+        </div>
+        <div class="elemento">
+            <img src="Img/audifonos.png" width="300px" border-radius="10px">
+            <h5>Audifonos Corsair Gaming VOID PRO RGB 3.5mm</h5>
+            <h5 class="Audifonos">Q640</h5>
+            <button class="agregar" id="Audifonos">Agregar al carrito</button>
+        </div>
+        <div class="elemento">
+            <img src="Img/ram.png" width="300px" border-radius="10px">
+            <h5>Memoria ram DDR4 8GB 3200mhz</h5>
+            <h5 class="Memoriaram">Q400</h5>
+            <button class="agregar" id="Memoriaram">Agregar al carrito</button>
+        </div>
+        <div class="elemento">
+            <img src="Img/procesador.png" width="300px" border-radius="10px">
+            <h5>Icore i5 10400F 6 nucleos/12 hilos</h5>
+            <h5 class="Procesador">Q2400</h5>
+            <button class="agregar" id="Procesador">Agregar al carrito</button>
+        </div>
+        <div id="contenedorTabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Descripcion</th><th>precio</th><th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="Mitabla">
+
+                </tbody>
+            </table>
+            <h4 id="Total">Total: 00</h4>
+            <button id="ventas">Vender</button> 
+            <button id="redirigir">Ver Historial de ventas</button>    
+        </div>
+
+
+    </body>
+</html>

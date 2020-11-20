@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historial</title>
+        <script type="text/javascript" src="Historiales.js"></script>
+        <style>
+
+            .bloque{
+                margin-left: 10px;
+                float: left;
+            }
+            .agregar{
+                border-radius: 10px;
+                background-color: cornflowerblue;
+                font-family: Arial, Helvetica, sans-serif;
+                border: solid 2px black;
+            }
+            #contenedorTabla{
+                margin: 350px;
+                width: 600px;
+                margin-top: 30px;
+            }
+            table{
+                width: 100%;
+                background-color:skyblue;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            th, td{
+                padding: 10px;
+
+            }
+            thead{
+                background-color:crimson;
+                border-bottom: solid 5px red;
+            }
+            #titulo{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="titulo">Historial de todos los productos vendidos</h2>
+        <div id="contenedorTabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Descripcion</th><th>precio</th><th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="Mitabla">
+
+                </tbody>
+            </table>
+
+        </div>
+    </body>
+</html>
